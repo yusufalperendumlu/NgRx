@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NGRX-STATE-MANAGEMENT';
+
+  number: number = 0;
+
+  addCount(event: number) {
+    this.number = event;
+  }
 }
