@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CountService } from './services/count.service';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'NGRX-STATE-MANAGEMENT';
 
-  number: number = 0;
+  
 
-  addCount(event: number) {
-    this.number = event;
-  }
+ 
 }

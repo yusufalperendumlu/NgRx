@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { CountService } from 'src/app/services/count.service';
 
 @Component({
   selector: 'app-add-count',
@@ -6,11 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./add-count.component.css']
 })
 export class AddCountComponent implements OnInit{
-
-  number: number = 0;
-  @Output() myEvent = new EventEmitter<any>();
-
-  constructor() {
+  
+  constructor(private _count: CountService) {
 
   }
 
@@ -19,8 +17,8 @@ export class AddCountComponent implements OnInit{
   }
 
   addCount() {
-    this.number++;
-    this.myEvent.emit(this.number);
+    this._count.number++;
+    
   }
 
 }
