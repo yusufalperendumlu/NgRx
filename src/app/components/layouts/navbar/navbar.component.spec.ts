@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddCountComponent } from './add-count.component';
+import { NavbarComponent } from './navbar.component';
 
-describe('AddCountComponent', () => {
-  let component: AddCountComponent;
-  let fixture: ComponentFixture<AddCountComponent>;
+describe('NavbarComponent', () => {
+  let component: NavbarComponent;
+  let fixture: ComponentFixture<NavbarComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AddCountComponent]
+      declarations: [NavbarComponent]
     });
-    fixture = TestBed.createComponent(AddCountComponent);
+    fixture = TestBed.createComponent(NavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
