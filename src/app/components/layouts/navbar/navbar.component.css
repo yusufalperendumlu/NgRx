@@ -1,0 +1,8 @@
+.badge-fixed-size {
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  font-size: 11px;
+  padding: 0;
+  top: 5px;
+}

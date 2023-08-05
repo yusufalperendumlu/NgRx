@@ -31,5 +31,4 @@ export class HomeComponent implements OnInit {
 
     this._basket.post(basketModel);
   }
-
 }

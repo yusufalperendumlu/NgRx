@@ -10,12 +10,13 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class=" nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                <li class="nav-item">
+                    <a class=" nav-link position-relative" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                         routerLink="/baskets">
                         Basket
-                        <span *ngIf="basketCount$ > 0;else defaultCase">
-                            <span class="badge bg-danger">{{basketCount$}}</span>
+                        <span *ngIf="basketCount$ > 0;else defaultCase"
+                            class="badge bg-danger position-absolute rounded-circle badge-fixed-size">
+                            {{basketCount$}}
                         </span>
                         <ng-template #defaultCase></ng-template>
                     </a>
